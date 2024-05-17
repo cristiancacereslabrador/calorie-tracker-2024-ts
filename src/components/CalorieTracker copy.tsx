@@ -26,7 +26,7 @@ const CalorieTracker = ({ activities }: CalorieTrackerProps) => {
   );
   const netCalories = useMemo(
     () => caloriesConsumed - caloriesBurned,
-    [caloriesConsumed, caloriesBurned]
+    [activities]
   );
 
   return (
